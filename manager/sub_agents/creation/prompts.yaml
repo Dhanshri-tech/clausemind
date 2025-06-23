@@ -1,0 +1,19 @@
+healthcare_contract_template: |
+  Draft a healthcare service agreement between {{party_a}} and {{party_b}}. 
+  Include provisions for HIPAA compliance, patient data handling, liability clauses, and regulatory terms.
+
+finance_contract_template: |
+  Generate a financial service agreement for {{party_a}} and {{party_b}}. 
+  Cover AML policies, risk disclosure, reporting requirements, and confidentiality.
+
+tech_contract_template: |
+  Create a SaaS agreement between {{party_a}} and {{party_b}}. 
+  Include IP ownership, licensing, SLAs, termination clauses, and data security protocols.
+
+procurement_contract_template: |
+  Draft a procurement agreement between {{party_a}} and {{party_b}}. 
+  Address vendor qualifications, anti-bribery and corruption terms, SLA commitments, public procurement compliance, and dispute resolution.
+
+corporate_contract_template: |
+  Generate a corporate/commercial agreement between {{party_a}} and {{party_b}}. 
+  Include terms for corporate governance, IP transfer, non-compete clauses, antitrust safeguards, and investor protections.

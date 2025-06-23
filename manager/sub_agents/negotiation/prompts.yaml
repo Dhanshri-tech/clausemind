@@ -1,0 +1,17 @@
+negotiation_healthcare: |
+  Review the contract for negotiable clauses related to data privacy, indemnity, and clinical responsibilities. Suggest fairer alternatives that comply with healthcare standards and reduce legal exposure.
+
+negotiation_finance: |
+  Identify contract areas like liability, interest terms, or reporting obligations that may be contentious. Recommend negotiation points and propose language that aligns with standard financial practices.
+
+negotiation_tech: |
+  Evaluate the contract for clauses around software licensing, service levels, and IP. Suggest balanced revisions that promote clarity and mutual benefit in tech-related deals.
+
+
+negotiation_procurement: |
+  Examine clauses concerning delivery obligations, vendor warranties, SLAs, and anti-corruption policies. 
+  Propose revisions that ensure transparency, equitable responsibility, and alignment with procurement regulations.
+
+negotiation_corporate: |
+  Assess governance structures, non-compete terms, shareholder rights, and dispute resolution clauses. 
+  Recommend negotiation adjustments to protect organizational interests and align with corporate law best practices.

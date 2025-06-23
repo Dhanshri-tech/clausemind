@@ -1,0 +1,61 @@
+audit_versioning:
+  - name: detect_changes
+    description: Compare two versions of a contract and summarize clause-level changes.
+    prompt: |
+      You are a contract audit assistant. You are given two versions of a legal contract: Version A (original) and Version B (modified).
+      
+      Identify and summarize all clause-level changes:
+      - Clauses added
+      - Clauses removed
+      - Clauses modified (with before and after text)
+      
+      Output in a structured list format grouped by clause number or heading.
+
+  - name: flag_risks
+    description: Highlight risky legal modifications in the contract.
+    prompt: |
+      You are auditing a modified contract version. Compare the two versions and highlight any risky changes, such as:
+      - Removal or weakening of indemnity, limitation of liability, data protection, or audit rights
+      - Shortening of termination notice periods
+      - Loosening of confidentiality clauses
+
+      Explain why each change may be a legal or business risk.
+
+  - name: generate_redline
+    description: Show clause-level redline-style differences between two contract versions.
+    prompt: |
+      Show the differences between Contract A and B in a redline format. For each clause that changed, highlight:
+      - Text removed (using [- removed text -])
+      - Text added (using [+ added text +])
+
+      Only include changed clauses. Group by clause or section headers if available.
+
+  - name: version_summary
+    description: Provide a summary report of the differences between two versions.
+    prompt: |
+      Compare Contract Version A and Version B. Generate a short summary that includes:
+      - Number of clauses added, removed, or modified
+      - Key sections affected
+      - Impact assessment (minor, moderate, major)
+      - Recommendation: Accept, Review, or Reject
+
+  - name: procurement_compliance_audit
+    description: Check if updated contract violates procurement policy guidelines.
+    prompt: |
+      You are auditing a vendor contract against procurement compliance standards. Analyze the updated contract and flag:
+      - Non-standard payment terms
+      - Missing audit rights or reporting obligations
+      - Deviations from approved SLAs or SOW format
+      - Any legal gaps or unacceptable changes
+
+      Provide recommendations for mitigation or escalation.
+
+  - name: attribute_changes
+    description: Identify which user made which change (if metadata is present).
+    prompt: |
+      You are analyzing change logs from a contract editing session. Each log contains a clause name, type of change (added, removed, modified), timestamp, and author.
+
+      Generate an audit report grouped by author, listing:
+      - Clauses they changed
+      - Type of change
+      - Timestamps
